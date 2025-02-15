@@ -96,7 +96,7 @@ async def get_html():
     <!DOCTYPE html>
     <html>
     <head>
-        <title>AIXP Demo</title>
+        <title>AIXP 智能体演示</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -170,9 +170,9 @@ async def get_html():
                 ws = new WebSocket('ws://' + window.location.host + '/ws');
                 
                 ws.onopen = function() {
-                    console.log('Connected to server');
+                    console.log('已连接到服务器');
                     reconnectAttempts = 0;
-                    updateStatus('Connected', true);
+                    updateStatus('已连接', true);
                 };
 
                 ws.onmessage = function(event) {
@@ -181,8 +181,8 @@ async def get_html():
                 };
 
                 ws.onclose = function() {
-                    console.log('Disconnected from server');
-                    updateStatus('Disconnected', false);
+                    console.log('与服务器断开连接');
+                    updateStatus('已断开连接', false);
                     if (reconnectAttempts < maxReconnectAttempts) {
                         reconnectAttempts++;
                         setTimeout(connect, 2000);
@@ -190,8 +190,8 @@ async def get_html():
                 };
 
                 ws.onerror = function(error) {
-                    console.error('WebSocket error:', error);
-                    updateStatus('Error: ' + error, false);
+                    console.error('WebSocket错误:', error);
+                    updateStatus('错误: ' + error, false);
                 };
             }
 
@@ -214,7 +214,7 @@ async def get_html():
                     data.data.agents.forEach(agent => {
                         const agentDiv = document.createElement('div');
                         agentDiv.className = 'agent-item';
-                        agentDiv.textContent = `Agent: ${agent.id} - Capabilities: ${agent.capabilities.join(', ')}`;
+                        agentDiv.textContent = `智能体: ${agent.id} - 能力: ${agent.capabilities.join(', ')}`;
                         agentList.appendChild(agentDiv);
                     });
 
@@ -255,14 +255,14 @@ async def get_html():
     </head>
     <body>
         <div class="container">
-            <h1>AIXP Demo</h1>
-            <div id="status" class="status">Connecting...</div>
+            <h1>AIXP 智能体演示</h1>
+            <div id="status" class="status">正在连接...</div>
             <div class="agent-list">
-                <h2>Registered Agents</h2>
+                <h2>已注册的智能体</h2>
                 <div id="agent-list"></div>
             </div>
             <div class="message-list">
-                <h2>Message History</h2>
+                <h2>消息历史</h2>
                 <div id="message-list"></div>
             </div>
         </div>

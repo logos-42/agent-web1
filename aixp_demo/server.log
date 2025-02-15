@@ -1,0 +1,580 @@
+2025-02-15 15:57:16,842 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 15:57:17,185 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 15:57:17,186 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 15:57:17,186 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 15:57:17,187 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 0,
+    "agents": []
+  }
+}
+2025-02-15 16:00:20,231 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:00:20,582 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:00:20,584 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:00:20,587 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:00:20,587 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 0,
+    "agents": []
+  }
+}
+2025-02-15 16:00:24,548 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:04:11,520 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:04:11,533 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:04:11,702 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:04:11,704 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:04:11,705 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:11,706 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 0,
+    "agents": []
+  }
+}
+2025-02-15 16:04:32,883 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:04:32,892 - aixp_demo.server - INFO - Registering agent: message_agent_1
+2025-02-15 16:04:32,893 - aixp_demo.server - INFO - Agent message_agent_1 registered successfully with capabilities: ['text_processing', 'chat']
+2025-02-15 16:04:32,893 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:32,893 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 1,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:34,903 - aixp_demo.server - INFO - Registering agent: message_agent_2
+2025-02-15 16:04:34,903 - aixp_demo.server - INFO - Agent message_agent_2 registered successfully with capabilities: ['image_processing', 'vision']
+2025-02-15 16:04:34,904 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:34,905 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:36,911 - aixp_demo.server - INFO - Current registered agents: {'message_agent_1': ['text_processing', 'chat'], 'message_agent_2': ['image_processing', 'vision']}
+2025-02-15 16:04:36,916 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:04:36,916 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:36,916 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:38,923 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:04:38,924 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:38,926 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:40,932 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:04:40,933 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:40,933 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:42,940 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:04:42,940 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:42,940 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:44,948 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:04:44,948 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:44,949 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:04:46,955 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:04:46,955 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:04:46,955 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:05:08,077 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:05:08,094 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:05:08,240 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:05:08,243 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:05:08,244 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:05:08,245 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:22,732 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:07:22,737 - aixp_demo.server - INFO - Registering agent: message_agent_1
+2025-02-15 16:07:22,737 - aixp_demo.server - INFO - Agent message_agent_1 registered successfully with capabilities: ['text_processing', 'chat']
+2025-02-15 16:07:22,738 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:22,738 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:24,745 - aixp_demo.server - INFO - Registering agent: message_agent_2
+2025-02-15 16:07:24,745 - aixp_demo.server - INFO - Agent message_agent_2 registered successfully with capabilities: ['image_processing', 'vision']
+2025-02-15 16:07:24,745 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:24,746 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:26,751 - aixp_demo.server - INFO - Current registered agents: {'message_agent_1': ['text_processing', 'chat'], 'message_agent_2': ['image_processing', 'vision']}
+2025-02-15 16:07:26,755 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:07:26,756 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:26,756 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:28,761 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:07:28,761 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:28,761 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:29,640 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:07:29,646 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:07:29,743 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:07:29,745 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:07:29,745 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:29,745 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:30,369 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:07:30,376 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:07:30,470 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:07:30,472 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:07:30,473 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:30,473 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:30,767 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:07:30,768 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:30,768 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:30,978 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:07:30,985 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:07:31,093 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:07:31,094 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:07:31,095 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:31,095 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:31,501 - aixp_demo.server - INFO - Serving frontend page
+2025-02-15 16:07:31,513 - aixp_demo.server - INFO - WebSocket disconnected normally
+2025-02-15 16:07:31,636 - aixp_demo.server - INFO - New WebSocket connection request
+2025-02-15 16:07:31,638 - aixp_demo.server - INFO - WebSocket connection accepted
+2025-02-15 16:07:31,639 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:31,640 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:32,773 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:07:32,773 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:32,774 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:34,781 - aixp_demo.server - INFO - Message from message_agent_1 to message_agent_2: process_message
+2025-02-15 16:07:34,781 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:34,782 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:07:36,786 - aixp_demo.server - INFO - Message from message_agent_2 to message_agent_1: message_reply
+2025-02-15 16:07:36,786 - aixp_demo.server - DEBUG - Broadcasting update to 1 clients
+2025-02-15 16:07:36,786 - aixp_demo.server - DEBUG - Broadcast message: {
+  "event": "update",
+  "data": {
+    "status": "running",
+    "registered_agents": 2,
+    "agents": [
+      {
+        "id": "message_agent_1",
+        "capabilities": [
+          "text_processing",
+          "chat"
+        ]
+      },
+      {
+        "id": "message_agent_2",
+        "capabilities": [
+          "image_processing",
+          "vision"
+        ]
+      }
+    ]
+  }
+}
+2025-02-15 16:11:02,989 - aixp_demo.server - INFO - WebSocket disconnected normally
